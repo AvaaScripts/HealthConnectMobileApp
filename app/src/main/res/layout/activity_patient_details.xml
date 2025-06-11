@@ -1,0 +1,206 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/gradient_background"
+    tools:context=".PatientDetailsActivity">
+
+
+
+
+
+
+    <TextView
+        android:id="@+id/nameDisplay"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="20dp"
+        android:fontFamily="@font/dm_sans_bold"
+        android:text="Patient Details"
+        android:textColor="@color/white"
+        android:textSize="20sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/patientDetailsTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:fontFamily="@font/dm_sans_medium"
+        android:text="Here is a list of all your Patients"
+        android:textColor="@color/green_shade_light_2"
+        android:textSize="16sp"
+        app:layout_constraintStart_toStartOf="@+id/nameDisplay"
+        app:layout_constraintTop_toBottomOf="@+id/nameDisplay" />
+
+
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/white_bar"
+        android:gravity="center_horizontal"
+        android:orientation="vertical"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent">
+
+
+
+
+<!--        <Button-->
+<!--            android:id="@+id/updateDeleteButton"-->
+<!--            android:layout_width="match_parent"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:text="Update/Delete Patient" />-->
+
+
+        <!--        <Button-->
+<!--            android:id="@+id/bookAppointmentButton"-->
+<!--            android:layout_width="match_parent"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:text="Book Appointment" />-->
+
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/updateDeleteButton"
+            android:layout_width="330dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="80dp"
+            android:background="@drawable/primary_button"
+            android:fontFamily="@font/dm_sans"
+            android:gravity="center"
+            android:text="Update/Delete Patient"
+            android:textAlignment="center"
+            android:textAllCaps="false"
+            android:textColor="@color/white"
+            android:textSize="16sp"
+            android:visibility="visible"
+            app:layout_constraintEnd_toEndOf="@+id/updatepres"
+            app:layout_constraintStart_toStartOf="@+id/updatepres"
+            app:layout_constraintTop_toBottomOf="@+id/updatepres"
+            tools:visibility="visible" />
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/bookAppointmentButton"
+            android:layout_width="330dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:background="@drawable/primary_button"
+            android:fontFamily="@font/dm_sans"
+            android:gravity="center"
+            android:layout_marginTop="20dp"
+            android:text="Book Appointment"
+            android:textAlignment="center"
+            android:textAllCaps="false"
+            android:textColor="@color/white"
+            android:textSize="16sp"
+            android:visibility="visible"
+            app:layout_constraintEnd_toEndOf="@+id/updatepres"
+            app:layout_constraintStart_toStartOf="@+id/updatepres"
+            app:layout_constraintTop_toBottomOf="@+id/updatepres"
+            tools:visibility="visible" />
+
+<!--        <Button-->
+<!--            android:id="@+id/consultationHistoryButton"-->
+<!--            android:layout_width="match_parent"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:text="Consultation History" />-->
+
+
+
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/consultationHistoryButton"
+            android:layout_width="330dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:background="@drawable/primary_button"
+            android:fontFamily="@font/dm_sans"
+            android:gravity="center"
+            android:layout_marginTop="20dp"
+            android:text="Consultation History"
+            android:textAlignment="center"
+            android:textAllCaps="false"
+            android:textColor="@color/white"
+            android:textSize="16sp"
+            android:visibility="visible"
+            app:layout_constraintEnd_toEndOf="@+id/updatepres"
+            app:layout_constraintStart_toStartOf="@+id/updatepres"
+            app:layout_constraintTop_toBottomOf="@+id/updatepres"
+            tools:visibility="visible" />
+
+<!--        <Button-->
+<!--            android:id="@+id/medicationTrackingButton"-->
+<!--            android:layout_width="match_parent"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:text="Medication Tracking" />-->
+
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/medicationTrackingButton"
+            android:layout_width="330dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:background="@drawable/primary_button"
+            android:fontFamily="@font/dm_sans"
+            android:gravity="center"
+            android:layout_marginTop="20dp"
+            android:text="Consultation / Medication"
+            android:textAlignment="center"
+            android:textAllCaps="false"
+            android:textColor="@color/white"
+            android:textSize="16sp"
+            android:visibility="visible"
+            app:layout_constraintEnd_toEndOf="@+id/updatepres"
+            app:layout_constraintStart_toStartOf="@+id/updatepres"
+            app:layout_constraintTop_toBottomOf="@+id/updatepres"
+            tools:visibility="visible" />
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/backButton"
+            android:layout_width="330dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:background="@drawable/primary_button"
+            android:fontFamily="@font/dm_sans"
+            android:gravity="center"
+            android:layout_marginTop="20dp"
+            android:text="back"
+            android:textAlignment="center"
+            android:textAllCaps="false"
+            android:textColor="@color/white"
+            android:textSize="16sp"
+            android:visibility="visible"
+            app:layout_constraintEnd_toEndOf="@+id/updatepres"
+            app:layout_constraintStart_toStartOf="@+id/updatepres"
+            app:layout_constraintTop_toBottomOf="@+id/updatepres"
+            tools:visibility="visible" />
+
+    </LinearLayout>
+
+<!--    <com.google.android.material.bottomnavigation.BottomNavigationView-->
+<!--        android:id="@+id/bottomNav"-->
+<!--        android:layout_width="match_parent"-->
+<!--        android:layout_height="65dp"-->
+<!--        android:layout_marginLeft="15dp"-->
+<!--        android:layout_marginRight="15dp"-->
+<!--        android:layout_marginBottom="20dp"-->
+<!--        android:background="@drawable/bottom_nav"-->
+<!--        android:elevation="8dp"-->
+<!--        app:labelVisibilityMode="unlabeled"-->
+<!--        app:layout_constraintBottom_toBottomOf="parent"-->
+<!--        app:layout_constraintLeft_toLeftOf="parent"-->
+<!--        app:layout_constraintRight_toRightOf="parent"-->
+<!--        app:menu="@menu/bottom_menu"-->
+<!--        tools:ignore="MissingConstraints" />-->
+
+</androidx.constraintlayout.widget.ConstraintLayout>

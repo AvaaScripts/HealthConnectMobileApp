@@ -1,0 +1,222 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".HomePageActivity">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:padding="16dp"
+        >
+
+
+        <TextView
+            android:id="@+id/appTitleTextView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="2dp"
+            android:text="Hello,"
+            android:textSize="14sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/appTitleTextView2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Doctor"
+            android:textSize="24sp"
+            android:textStyle="bold"
+            android:layout_marginBottom="1dp" />
+
+        <!-- Main Activity Button -->
+<!--        <Button-->
+<!--            android:id="@+id/mainActivityButton"-->
+<!--            android:layout_width="wrap_content"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:text="Go to Main Activity"-->
+<!--            android:layout_marginBottom="16dp" />-->
+
+
+        <!-- Today's Appointments Button -->
+<!--        <Button-->
+<!--            android:id="@+id/todaysAppointmentsButton"-->
+<!--            android:layout_width="wrap_content"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:text="View Today's Appointments" />-->
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="280dp"
+            android:orientation="horizontal"
+
+            android:padding="16dp">
+
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/mainActivityButton"
+                android:layout_width="150dp"
+                android:layout_height="200dp"
+                android:layout_gravity="center"
+                android:layout_marginRight="20dp"
+                android:background="@drawable/primary_button3"
+                android:fontFamily="@font/dm_sans"
+                android:gravity="center"
+                android:text="View Patients"
+                android:textAlignment="center"
+                android:textAllCaps="false"
+                android:textColor="@color/white"
+                android:textSize="16sp"
+                android:visibility="visible"
+                tools:visibility="visible" />
+
+
+
+
+<!--            <androidx.appcompat.widget.AppCompatButton-->
+<!--                android:id="@+id/viewProfileButton"-->
+<!--                android:layout_width="130dp"-->
+<!--                android:layout_height="200dp"-->
+<!--                android:layout_gravity="center"-->
+<!--                android:layout_marginTop="20dp"-->
+<!--                android:layout_marginRight="20dp"-->
+<!--                android:background="@drawable/primary_button"-->
+<!--                android:fontFamily="@font/dm_sans"-->
+<!--                android:gravity="center"-->
+<!--                android:text="View Profile"-->
+<!--                android:textAlignment="center"-->
+<!--                android:textAllCaps="false"-->
+<!--                android:textColor="@color/white"-->
+<!--                android:textSize="16sp"-->
+<!--                android:visibility="visible"-->
+<!--                tools:visibility="visible" />-->
+
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/todaysAppointmentsButton"
+                android:layout_width="150dp"
+                android:layout_height="200dp"
+                android:layout_gravity="center"
+                android:background="@drawable/primary_button3"
+                android:fontFamily="@font/dm_sans"
+                android:gravity="center"
+                android:text="Appointments"
+                android:textAlignment="center"
+                android:textAllCaps="false"
+                android:textColor="@color/white"
+                android:textSize="16sp"
+                android:visibility="visible"
+                tools:visibility="visible" />
+
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/textView3"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Quick Access"
+            android:layout_marginTop="30dp"
+            android:textColor="#000000"
+            android:textSize="20sp" />
+
+        <TextView
+            android:id="@+id/textView4"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Get Quick access to your top features on the app" />
+
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/viewConsultationsButton"
+            android:layout_width="420dp"
+            android:layout_height="50dp"
+            android:layout_gravity="center"
+            android:layout_marginTop="35dp"
+            android:background="@drawable/primary_button3"
+            android:fontFamily="@font/dm_sans"
+            android:text="Add New Patient"
+            android:textAllCaps="false"
+            android:textColor="@color/white"
+            android:textSize="16sp"
+            android:gravity="center_vertical|start"
+            android:drawableEnd="@drawable/todoicon"
+            android:drawablePadding="8dp"
+            android:paddingStart="40dp"
+            android:paddingEnd="40dp"
+            android:visibility="visible" />
+
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/ViewPatientButton"
+            android:layout_width="420dp"
+            android:layout_height="50dp"
+            android:layout_gravity="center"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/primary_button3"
+            android:fontFamily="@font/dm_sans"
+            android:text="Patient Consultation"
+            android:textAllCaps="false"
+            android:textColor="@color/white"
+            android:textSize="16sp"
+            android:gravity="center_vertical|start"
+            android:drawableEnd="@drawable/todoicon"
+            android:drawablePadding="8dp"
+            android:paddingStart="40dp"
+            android:paddingEnd="40dp"
+            android:visibility="visible" />
+
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/BookConsultationButton"
+            android:layout_width="420dp"
+            android:layout_height="50dp"
+            android:layout_gravity="center"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/primary_button3"
+            android:fontFamily="@font/dm_sans"
+            android:text="Book Appointment"
+            android:textAllCaps="false"
+            android:textColor="@color/white"
+            android:textSize="16sp"
+            android:gravity="center_vertical|start"
+            android:drawableEnd="@drawable/todoicon"
+            android:drawablePadding="8dp"
+            android:paddingStart="40dp"
+            android:paddingEnd="40dp"
+            android:visibility="visible" />
+
+
+
+
+
+
+
+    </LinearLayout>
+
+
+<!--    <com.google.android.material.bottomnavigation.BottomNavigationView-->
+<!--        android:id="@+id/bottomNav"-->
+<!--        android:layout_width="match_parent"-->
+<!--        android:layout_height="65dp"-->
+<!--        android:layout_marginLeft="15dp"-->
+<!--        android:layout_marginRight="15dp"-->
+<!--        android:layout_marginBottom="20dp"-->
+<!--        android:background="@drawable/bottom_nav"-->
+<!--        android:elevation="8dp"-->
+<!--        app:labelVisibilityMode="unlabeled"-->
+<!--        app:layout_constraintBottom_toBottomOf="parent"-->
+<!--        app:layout_constraintLeft_toLeftOf="parent"-->
+<!--        app:layout_constraintRight_toRightOf="parent"-->
+<!--        app:menu="@menu/bottom_menu"-->
+<!--        tools:ignore="MissingConstraints" />-->
+
+
+
+
+
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

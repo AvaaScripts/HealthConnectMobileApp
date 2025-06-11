@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/infoscreenbackground">
+
+    <!-- HealthConnect Logo -->
+    <!-- Adjust bias to control vertical positioning -->
+
+    <!-- Doctor Image -->
+
+    <ImageView
+        android:id="@+id/healthConnectLogo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="120dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.438"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/healthconnectlogo" />
+
+    <ImageView
+        android:id="@+id/doctorIcon"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/healthConnectLogo"
+        app:layout_constraintVertical_bias="0.143"
+        app:srcCompat="@drawable/doctor1con" />
+
+    <!-- Adjust bias to control spacing -->
+
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Lets Help you, help people feel better"
+        tools:layout_editor_absoluteX="88dp"
+        tools:layout_editor_absoluteY="501dp" />
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="No. 1 Doctor's Choice"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        tools:layout_editor_absoluteX="89dp"
+        tools:layout_editor_absoluteY="460dp" />
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/nextButton"
+        android:layout_width="330dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:background="@drawable/primary_button"
+        android:fontFamily="@font/dm_sans"
+        android:gravity="center"
+        android:text="Next"
+        android:textAlignment="center"
+        android:textAllCaps="false"
+        android:textColor="@color/white"
+        android:textSize="16sp"
+        android:visibility="visible"
+        tools:layout_editor_absoluteX="40dp"
+        tools:layout_editor_absoluteY="565dp" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,215 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".AddPatientActivity">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:padding="16dp">
+
+
+        <TextView
+            android:id="@+id/appTitleTextView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Enter Patient Details."
+            android:textSize="24sp"
+            android:textStyle="bold"
+            android:layout_marginBottom="32dp" />
+
+<!--        <EditText-->
+<!--            android:id="@+id/nameEditText"-->
+<!--            android:layout_width="match_parent"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:hint="Enter Name"-->
+<!--            android:inputType="textPersonName" />-->
+
+
+        <EditText
+            android:id="@+id/nameEditText"
+            android:layout_width="380dp"
+            android:layout_height="50dp"
+            android:layout_marginBottom="20dp"
+            android:background="@drawable/stroked"
+            android:ems="10"
+            android:fontFamily="@font/dm_sans"
+            android:hint="Enter Name"
+            android:inputType="textPersonName"
+            android:paddingLeft="20dp"
+            android:textColorHint="@android:color/darker_gray"
+            app:layout_constraintBottom_toTopOf="@+id/pass_box"
+            app:layout_constraintEnd_toEndOf="@+id/pass_box"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="@+id/pass_box" />
+
+<!--        <EditText-->
+<!--            android:id="@+id/ageEditText"-->
+<!--            android:layout_width="match_parent"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:hint="Enter Age"-->
+<!--            android:inputType="number" />-->
+
+        <EditText
+            android:id="@+id/ageEditText"
+            android:layout_width="380dp"
+            android:layout_height="50dp"
+            android:layout_marginBottom="20dp"
+            android:background="@drawable/stroked"
+            android:ems="10"
+            android:fontFamily="@font/dm_sans"
+            android:hint="Enter Age"
+            android:inputType="number"
+            android:paddingLeft="20dp"
+            android:textColorHint="@android:color/darker_gray"
+            app:layout_constraintBottom_toTopOf="@+id/pass_box"
+            app:layout_constraintEnd_toEndOf="@+id/pass_box"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="@+id/pass_box" />
+
+
+<!--        <EditText-->
+<!--            android:id="@+id/genderEditText"-->
+<!--            android:layout_width="match_parent"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:hint="Enter Gender"-->
+<!--            android:inputType="text" />-->
+
+
+        <EditText
+            android:id="@+id/genderEditText"
+            android:layout_width="380dp"
+            android:layout_height="50dp"
+            android:layout_marginBottom="20dp"
+            android:background="@drawable/stroked"
+            android:ems="10"
+            android:fontFamily="@font/dm_sans"
+            android:hint="Enter Gender"
+            android:inputType="text"
+            android:paddingLeft="20dp"
+            android:textColorHint="@android:color/darker_gray"
+            app:layout_constraintBottom_toTopOf="@+id/pass_box"
+            app:layout_constraintEnd_toEndOf="@+id/pass_box"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="@+id/pass_box" />
+
+
+
+
+<!--        <EditText-->
+<!--            android:id="@+id/contactEditText"-->
+<!--            android:layout_width="match_parent"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:hint="Enter Contact"-->
+<!--            android:inputType="phone" />-->
+
+
+        <EditText
+            android:id="@+id/contactEditText"
+            android:layout_width="380dp"
+            android:layout_height="50dp"
+            android:layout_marginBottom="20dp"
+            android:background="@drawable/stroked"
+            android:ems="10"
+            android:fontFamily="@font/dm_sans"
+            android:hint="Enter Phone"
+            android:inputType="phone"
+            android:paddingLeft="20dp"
+            android:textColorHint="@android:color/darker_gray"
+            app:layout_constraintBottom_toTopOf="@+id/pass_box"
+            app:layout_constraintEnd_toEndOf="@+id/pass_box"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="@+id/pass_box" />
+
+<!--        <EditText-->
+<!--            android:id="@+id/historyEditText"-->
+<!--            android:layout_width="match_parent"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:hint="Enter Medical History"-->
+<!--            android:inputType="textMultiLine"-->
+<!--            android:minLines="3" />-->
+
+
+
+        <EditText
+            android:id="@+id/historyEditText"
+            android:layout_width="380dp"
+            android:layout_height="100dp"
+            android:layout_marginBottom="20dp"
+            android:background="@drawable/stroked"
+            android:ems="10"
+            android:fontFamily="@font/dm_sans"
+            android:hint="Enter Patient History"
+            android:inputType="text"
+            android:paddingLeft="20dp"
+            android:textColorHint="@android:color/darker_gray"
+            app:layout_constraintBottom_toTopOf="@+id/pass_box"
+            app:layout_constraintEnd_toEndOf="@+id/pass_box"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="@+id/pass_box" />
+
+<!--        <Button-->
+<!--            android:id="@+id/saveButton"-->
+<!--            android:layout_width="match_parent"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:layout_marginTop="16dp"-->
+<!--            android:text="Save"-->
+<!--            app:cornerRadius="0dp" />-->
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/saveButton"
+            android:layout_width="330dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:background="@drawable/primary_button"
+            android:fontFamily="@font/dm_sans"
+            android:gravity="center"
+            android:layout_marginTop="20dp"
+            android:text="Save"
+            android:textAlignment="center"
+            android:textAllCaps="false"
+            android:textColor="@color/white"
+            android:textSize="16sp"
+            android:visibility="visible"
+            app:layout_constraintEnd_toEndOf="@+id/updatepres"
+            app:layout_constraintStart_toStartOf="@+id/updatepres"
+            app:layout_constraintTop_toBottomOf="@+id/updatepres"
+            tools:visibility="visible" />
+
+<!--        <Button-->
+<!--            android:id="@+id/cancelButton"-->
+<!--            android:layout_width="match_parent"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:layout_marginTop="8dp"-->
+<!--            android:text="Cancel"-->
+<!--            app:cornerRadius="0dp" />-->
+
+
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/cancelButton"
+            android:layout_width="330dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:background="@drawable/primary_button"
+            android:fontFamily="@font/dm_sans"
+            android:gravity="center"
+            android:layout_marginTop="20dp"
+            android:text="Cancel"
+            android:textAlignment="center"
+            android:textAllCaps="false"
+            android:textColor="@color/white"
+            android:textSize="16sp"
+            android:visibility="visible"
+            app:layout_constraintEnd_toEndOf="@+id/updatepres"
+            app:layout_constraintStart_toStartOf="@+id/updatepres"
+            app:layout_constraintTop_toBottomOf="@+id/updatepres"
+            tools:visibility="visible" />
+    </LinearLayout>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

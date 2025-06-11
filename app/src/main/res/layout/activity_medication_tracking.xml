@@ -1,0 +1,167 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MedicationTrackingActivity">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:padding="16dp">
+
+        <EditText
+            android:id="@+id/diagnosisEditText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Enter Diagnosis"
+            android:inputType="text" />
+
+        <EditText
+            android:id="@+id/medicationNameEditText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Enter Medication Name"
+            android:minHeight="48dp" />
+
+        <EditText
+            android:id="@+id/dosageEditText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Enter Dosage"
+            android:minHeight="48dp" />
+
+        <EditText
+            android:id="@+id/durationEditText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Enter Duration (e.g., 7 days)"
+            android:minHeight="48dp" />
+
+        <EditText
+            android:id="@+id/causeOfVisitEditText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Enter Cause of Visit"
+            android:minHeight="48dp" />
+
+
+        <TextView
+            android:id="@+id/selectedConsultationDateTextView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Consultation Date: "
+            android:paddingTop="18dp"
+            android:textSize="16sp" />
+
+<!--        <Button-->
+<!--            android:id="@+id/selectConsultationDateButton"-->
+<!--            android:layout_width="match_parent"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:text="Select Consultation Date" />-->
+
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/selectConsultationDateButton"
+            android:layout_width="330dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:background="@drawable/primary_button"
+            android:fontFamily="@font/dm_sans"
+            android:gravity="center"
+            android:layout_marginTop="20dp"
+            android:text="Select Consultation Date"
+            android:textAlignment="center"
+            android:textAllCaps="false"
+            android:textColor="@color/white"
+            android:textSize="16sp"
+            android:visibility="visible"
+            app:layout_constraintEnd_toEndOf="@+id/updatepres"
+            app:layout_constraintStart_toStartOf="@+id/updatepres"
+            app:layout_constraintTop_toBottomOf="@+id/updatepres"
+            tools:visibility="visible" />
+
+
+
+<!--        <Button-->
+<!--            android:id="@+id/addMedicationButton"-->
+<!--            android:layout_width="match_parent"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:text="Add Medication" />-->
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/addMedicationButton"
+            android:layout_width="330dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:background="@drawable/primary_button"
+            android:fontFamily="@font/dm_sans"
+            android:gravity="center"
+            android:layout_marginTop="20dp"
+            android:text="Submit Consultation"
+            android:textAlignment="center"
+            android:textAllCaps="false"
+            android:textColor="@color/white"
+            android:textSize="16sp"
+            android:visibility="visible"
+            app:layout_constraintEnd_toEndOf="@+id/updatepres"
+            app:layout_constraintStart_toStartOf="@+id/updatepres"
+            app:layout_constraintTop_toBottomOf="@+id/updatepres"
+            tools:visibility="visible" />
+
+        <TextView
+            android:id="@+id/medicationsTextView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingTop="16dp"
+            android:text="Medications will be displayed here."
+            android:textSize="16sp" />
+
+
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/backButton"
+            android:layout_width="330dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:background="@drawable/primary_button"
+            android:fontFamily="@font/dm_sans"
+            android:gravity="center"
+            android:layout_marginTop="50dp"
+            android:text="back"
+            android:textAlignment="center"
+            android:textAllCaps="false"
+            android:textColor="@color/white"
+            android:textSize="16sp"
+            android:visibility="visible"
+            app:layout_constraintEnd_toEndOf="@+id/updatepres"
+            app:layout_constraintStart_toStartOf="@+id/updatepres"
+            app:layout_constraintTop_toBottomOf="@+id/updatepres"
+            tools:visibility="visible" />
+
+
+
+
+    </LinearLayout>
+
+<!--    <com.google.android.material.bottomnavigation.BottomNavigationView-->
+<!--        android:id="@+id/bottomNav"-->
+<!--        android:layout_width="match_parent"-->
+<!--        android:layout_height="65dp"-->
+<!--        android:layout_marginLeft="15dp"-->
+<!--        android:layout_marginRight="15dp"-->
+<!--        android:layout_marginBottom="20dp"-->
+<!--        android:background="@drawable/bottom_nav"-->
+<!--        android:elevation="8dp"-->
+<!--        app:labelVisibilityMode="unlabeled"-->
+<!--        app:layout_constraintBottom_toBottomOf="parent"-->
+<!--        app:layout_constraintLeft_toLeftOf="parent"-->
+<!--        app:layout_constraintRight_toRightOf="parent"-->
+<!--        app:menu="@menu/bottom_menu"-->
+<!--        tools:ignore="MissingConstraints" />-->
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

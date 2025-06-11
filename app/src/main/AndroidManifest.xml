@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.healthconnect_v1">
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.AppCompat.DayNight">
+        <activity
+            android:name=".MedicationItem"
+            android:exported="false" />
+        <!-- Splash Activity (Make this the launcher activity) -->
+        <activity
+            android:name=".SplashActivity"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity> <!-- Other Activities -->
+        <activity
+            android:name=".ConsultationActivity"
+            android:exported="false" />
+        <activity
+            android:name=".ProfileActivity"
+            android:exported="false" />
+        <activity
+            android:name=".InfoScreenOne"
+            android:exported="true" />
+        <activity
+            android:name=".InfoScreenTwo"
+            android:exported="false" />
+        <activity
+            android:name=".SignInActivity"
+            android:exported="true" />
+        <activity
+            android:name=".HomePageActivity"
+            android:exported="false" />
+        <activity
+            android:name=".SignUpActivity"
+            android:exported="false" />
+        <activity
+            android:name=".AppointmentActivity"
+            android:exported="false" />
+        <activity
+            android:name=".ConsultationHistoryActivity"
+            android:exported="false" />
+        <activity
+            android:name=".MedicationTrackingActivity"
+            android:exported="false" />
+        <activity
+            android:name=".PatientDetailsActivity"
+            android:exported="false" />
+        <activity
+            android:name=".TodaysAppointmentsActivity"
+            android:exported="false" />
+        <activity
+            android:name=".AddPatientActivity"
+            android:exported="false" />
+        <activity
+            android:name=".UpdateDeleteActivity"
+            android:exported="false" />
+        <activity
+            android:name=".MainActivity"
+            android:exported="false" />
+        <activity
+            android:name=".SettingsActivity"
+            android:exported="false" />
+    </application>
+
+</manifest>
